@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+:root{
+    font-size: 62.5%;
+    font-family: 'mulish', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+    background-color: #065E7C;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+.container{
+    padding: 1.6rem 3.2rem ;
+    width: min(112rem, 100%);
+    margin: 0 auto;
+}
+main{
+    overflow: scroll;
+    background-color: #fff;
+
+}
+header{
+   display: flex;
+   align-items: center;
+   gap: 2.8rem;
+}
+header form{
+    flex: 1;
+}
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  
+}
+
+    
+
+.input-wrapper #search{
+    background-color: #fff;
+}
+.input-wrapper input {
+     width: 100%;
+     padding: 1.4rem  ;
+     background-color: rgba(255, 255, 255, 0.2);
+     border-radius: .4rem;
+     border: 0;
+
+     font-size: 1.6reem;
+     font-weight: 600;
+     opacity: 0.4;
+
+     }
+
+        
+
+.avatar{
+    width: 4.2rem;
+    height: 4.2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+main{
+    box-sizing: border-box;
+    display:flex;
+}
+.fotoum {
+    grid-template-columns:;
+}
+.ftgato{
+    width: 80.3rem;
+    height: 40.5rem;
+    padding: 4.4rem 11.2rem
+}
+h1 {
+    padding: 3.1rem 11.2rem
+}
+p {
+    padding: 3.1rem 11.2rem
+}
+ul{
+    padding: 3.2rem 34.2rem ;
+}
+footer{
+    text-align: center;
+    padding: 1.6rem;
+    font-weight: 600;
+}
