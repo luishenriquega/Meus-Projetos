@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Vencer Sempre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Login -->
+<div id="login" class="container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Usuário">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <p id="loginError" class="error"></p>
+</div>
+
+<!-- Menu -->
+<div id="menu" class="container" style="display: none;">
+    <h2>Menu</h2>
+    <button onclick="showCadastro()">Reservar Equipamento</button>
+    <button onclick="showConsulta()">Consultar Reserva</button>
+    <button onclick="showGerenciamento()">Editar Reserva</button>
+    <button onclick="logout()">Sair</button>
+</div>
+
+<!-- Reserva Equipamento -->
+<div id="cadastro" class="container" style="display: none;">
+    <h2>Cadastrar reserva</h2>
+    <input type="text" id="nomeEquipamento" placeholder="Nome do Professor">
+    <input type="text" id="tipo" placeholder="Tipo (Notebook, Caixa de Som, etc.)">
+    <input type="number" id="ID de Reserva" placeholder="ID de Reserva">
+    <input type="text" id="local" placeholder="Local">
+	<input type="date" id="date" placeholder="Data">
+    <button onclick="cadastrarEquipamento()">Cadastrar</button>
+    <p id="cadastroError" class="error"></p>
+    <button onclick="cancelarCadastro()">Cancelar</button>
+</div>
+
+<!-- Consulta Equipamento -->
+<div id="consulta" class="container" style="display: none;">
+    <h2>Consultar reserva</h2>
+    <input type="number" id="idConsulta" placeholder="ID da Reserva">
+    <button onclick="consultarEquipamento()">Consultar</button>
+    <p id="consultaError" class="error"></p>
+    <div id="equipamentoDetalhes"></div>
+    <button onclick="cancelarConsulta()">Cancelar</button>
+</div>
+
+<!-- Gerenciamento Equipamento -->
+<div id="gerenciamento" class="container" style="display: none;">
+    <h2>Editar Reserva</h2>
+    <input type="number" id="idGerenciamento" placeholder="ID do Equipamento">
+    <button onclick="gerenciarEquipamento()">Editar</button>
+    <p id="gerenciamentoError" class="error"></p>
+    <div id="gerenciamentoDetalhes"></div>
+    <button onclick="cancelarGerenciamento()">Cancelar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

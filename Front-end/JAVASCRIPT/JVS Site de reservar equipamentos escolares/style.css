@@ -1,0 +1,90 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+	
+    font-family: Arial, sans-serif;
+    background-image: url('./Colegio.jpg');
+	background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container comum */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Campos de input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #58a1f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4091e7;
+}
+
+/* Mensagens de erro */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Layout */
+button + button {
+    margin-top: 10px;
+}
+
+/* Estilo de exibição detalhada */
+#equipamentoDetalhes, #gerenciamentoDetalhes {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Estilo de exibição dos formulários */
+#login, #menu, #cadastro, #consulta, #gerenciamento {
+    display: flex;
+    flex-direction: column;
+}
+
+#cadastro input, #consulta input, #gerenciamento input {
+    margin-bottom: 12px;
+}
